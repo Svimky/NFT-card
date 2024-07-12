@@ -1,0 +1,164 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Outfit, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 400px;
+    height: 70%;
+    max-height: 575px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 10px 50px hsl(216, 50%, 16%);
+}
+
+.image-container {
+    position: relative;
+    width: 90%;
+    max-width: 325px;
+    max-height: 325px;
+    margin: 0 auto;
+    margin-top: 6%
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 3%;
+}
+
+.image-container div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 3%;
+}
+
+.image-container div:hover {
+    opacity: 1;
+    background-color: hsl(178, 100%, 50%, 0.5);
+}
+
+.image-container div img {
+    position: absolute;
+    width: 48px;
+    justify-content: center;
+}
+
+hr {
+
+    border: 1px solid hsl(215, 32%, 27%)
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.upper-part {
+    width: 90%;
+    height: 25%;
+    margin-top: 5%;
+}
+
+.upper-part h2 {
+    margin-bottom: 4%;
+    font-weight: 600;
+}
+
+.upper-part ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.eth-icon {
+    width: 11px;
+    height: 17px;
+}
+
+.clock-icon {
+    width: 17px;
+    height: 17px;
+}
+
+.icon {
+    margin: auto 0;
+}
+
+.upper-part ul li {
+    display: flex;
+}
+
+.upper-part ul li p {
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.upper-part ul li:nth-child(1) p {
+    color: hsl(178, 100%, 50%);
+}
+
+.bottom-part {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    padding: 3% 0;
+    height: 100%;
+    margin-bottom: 3%;
+}
+
+.bottom-part img {
+    width: 36px;
+    height: 36px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.bottom-part p {
+    padding-left: 4%;
+    margin: auto 0;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
